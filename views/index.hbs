@@ -2,11 +2,94 @@
 <html>
 {{> head}}
 <body>
-<form>
-    <input name="greeting" value="{{greeting}}">
-    <p>{{greeting}}, World</p>
-    <a href="/?greeting=">Clear</a>
-    <input type="submit" class="btn btn-success" value="Send">
-</form>
+<div class="container">
+    <form name="eingabe">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="ralf"> Ralf
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="susanne"> Susanne
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="chriss"> Chrissi
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="marie"> Marie
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="bechu"> Be-Chu
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="datum">Datum: </label>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="date" name="datum" class="datepicker">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            Uhrzeit
+                        </div>
+                        <div class="col-md-1">
+                            <label for="von">von:</label>
+                        </div>
+
+                        <div class="col-md-2">
+                            <select class="form-control" name="von">
+                                <option>07:00 h</option>
+                                <option>09:00 h</option>
+                                <option>12:00 h</option>
+                                <option>15:00 h</option>
+                                <option>18:00 h</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-1">
+                            <label for="bis">bis:</label>
+                        </div>
+
+                        <div class="col-md-2">
+                            <select class="form-control" name="bis">
+                                <option>07:00 h</option>
+                                <option>09:00 h</option>
+                                <option>12:00 h</option>
+                                <option>15:00 h</option>
+                                <option>18:00 h</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <input name="greeting" value="{{greeting}}">
+
+        <p>{{greeting}}, World</p>
+        <a href="/?greeting=">Clear</a>
+        <input type="submit" class="btn btn-success" value="Send">
+    </form>
+</div>
 </body>
 </html>
